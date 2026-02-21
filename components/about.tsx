@@ -14,7 +14,7 @@ const credentials = [
   {
     icon: GraduationCap,
     label: 'M.S. Exercise Science',
-    detail: 'Stanford University',
+    detail: 'Stanford University2',
   },
   {
     icon: Award,
