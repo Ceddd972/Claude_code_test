@@ -4,8 +4,8 @@ import { ThemeProvider } from '@/components/theme-provider'
 
 import './globals.css'
 
-const _geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
-const _inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
   title: 'Coach Alex Rivera | Elite Fitness Transformation',
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${_geist.variable} ${_inter.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${geist.variable} ${inter.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased bg-background text-foreground">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           {children}

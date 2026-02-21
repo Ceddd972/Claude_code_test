@@ -183,7 +183,7 @@ Only 4 spots remaining for February.
 
 Coach Alex Rivera
 Website: https://v0-coach-alex-rivera-prototype.vercel.app
-Email: cedricbelhk@gmailcom
+Email: cedricbelhk@gmail.com
 `.trim()
 
   return new NextResponse(content, {

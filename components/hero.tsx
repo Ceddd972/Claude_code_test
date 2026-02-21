@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Check } from 'lucide-react'
 import { AnimatedOrbs } from '@/components/animated-orbs'
@@ -68,11 +69,12 @@ export function Hero() {
             viewport={{ once: true }}
             className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl md:aspect-square"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=800&fit=crop&q=80"
               alt="Elite fitness coaching session in a modern gym"
-              className="absolute inset-0 h-full w-full object-cover"
+              fill
+              className="object-cover"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           </motion.div>
