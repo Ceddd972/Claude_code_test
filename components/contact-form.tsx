@@ -42,7 +42,7 @@ export function ContactForm() {
       await new Promise((resolve) => setTimeout(resolve, 1000))
       toast.success('Message sent! I will get back to you within 24 hours.')
       setFormData({ name: '', email: '', phone: '', message: '' })
-    } catch (error) {
+    } catch {
       toast.error('Failed to send message. Please try again.')
     } finally {
       setLoading(false)

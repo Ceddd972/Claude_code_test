@@ -27,25 +27,25 @@ export default function Home() {
       {/* 4. Social Proof (Logo Marquee) */}
       <FeaturedIn />
 
-      {/* 4. The Method (Zig-Zag) */}
+      {/* 5. The Method (Zig-Zag) */}
       <Features />
 
-      {/* 5. Transformation (Bento Grid) */}
+      {/* 6. Transformation (Bento Grid) */}
       <Results />
 
-      {/* 6. Testimonials */}
+      {/* 7. Testimonials */}
       <Testimonials />
 
-      {/* 7. Pricing ($497 Card) */}
+      {/* 8. Pricing ($497 Card) */}
       <Pricing />
 
-      {/* 8. FAQ (Accordion) */}
+      {/* 9. FAQ (Accordion) */}
       <FAQ />
 
-      {/* 9. Guarantee */}
+      {/* 10. Guarantee */}
       <Guarantee />
 
-      {/* 10. Final CTA */}
+      {/* 11. Final CTA */}
       <CTA />
 
       {/* Checkout anchor */}

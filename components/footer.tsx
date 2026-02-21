@@ -19,9 +19,12 @@ export function Footer() {
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault()
-    if (email.trim()) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (email.trim() && emailRegex.test(email)) {
       toast.success('Thanks for subscribing! Check your email for a welcome guide.')
       setEmail('')
+    } else {
+      toast.error('Please enter a valid email address.')
     }
   }
 
