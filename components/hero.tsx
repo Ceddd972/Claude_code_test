@@ -69,12 +69,11 @@ export function Hero() {
             viewport={{ once: true }}
             className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl md:aspect-square"
           >
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=800&fit=crop&q=80"
               alt="Elite fitness coaching session in a modern gym"
-              fill
-              className="object-cover"
-              priority
+              className="absolute inset-0 h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           </motion.div>
